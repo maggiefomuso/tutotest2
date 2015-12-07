@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@drawable/fit1"
+        android:layout_alignRight="@+id/buttonStartFreeTrail"
+        android:layout_alignEnd="@+id/buttonStartFreeTrail"
+        android:layout_above="@+id/buttonStartPreDefined"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pre-defined selection"
+        android:id="@+id/buttonStartPreDefined"
+        android:textColor="@color/material_blue_grey_800"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="sendMessage" />
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free Trail Selection"
+        android:id="@+id/buttonStartFreeTrail"
+        android:textColor="@color/material_blue_grey_800"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/buttonStartPreDefined"
+        android:layout_toEndOf="@+id/buttonStartPreDefined" />
+
+
+
+</RelativeLayout>
